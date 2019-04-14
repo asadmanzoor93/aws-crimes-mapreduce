@@ -5,7 +5,8 @@ You need to replicate the scenario taught today in the classroom. You may use cl
 
 1. Push crimes data file in S3/GCS bucket.
 2. Create a python/scala project having spark-core and spark-sql dependencies locally.
-3. Create an ETL pipeline to fetch crimes committed in year 2007 from the data loaded in the bucket and load the data into any relational DB table with (crime, count) schema. (Relational db must be on cloud).
+3. Create an ETL pipeline to fetch crimes committed in year 2007 from the data loaded in the bucket and 
+   load the data into any relational DB table with (crime, count) schema. (Relational db must be on cloud).
 
 Your code will be executed in the local environment and will connect to cloud components or services.
 
