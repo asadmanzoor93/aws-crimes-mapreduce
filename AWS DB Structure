@@ -1,0 +1,50 @@
+## RDS Database Table Structure
+
+create table crimes
+(
+	id int auto_increment
+		primary key,
+	crime varchar(100) null,
+	count int null
+);
+
+
+## Athena Database Table Structure
+
+CREATE EXTERNAL TABLE `crimes`(
+  `id` int, 
+  `case_number` string, 
+  `date` timestamp, 
+  `block` string, 
+  `iucr` string, 
+  `primary_type` string, 
+  `description` string, 
+  `location_description` string, 
+  `arrest` boolean, 
+  `domestic` boolean, 
+  `beat` int, 
+  `district` int, 
+  `ward` string, 
+  `community_area` int, 
+  `fbi_code` string, 
+  `x_coordinate` string, 
+  `y_coordinate` string, 
+  `year` int, 
+  `updated_on` timestamp, 
+  `latitude` string, 
+  `longitude` string, 
+  `location` string)
+ROW FORMAT DELIMITED 
+  FIELDS TERMINATED BY ',' 
+STORED AS INPUTFORMAT 
+  'org.apache.hadoop.mapred.TextInputFormat' 
+OUTPUTFORMAT 
+  'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
+LOCATION
+  's3://aws-bda-assign1/bda_data/'
+TBLPROPERTIES (
+  'has_encrypted_data'='false', 
+  'transient_lastDdlTime'='1555142143')
+
+
+

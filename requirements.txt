@@ -1,0 +1,3 @@
+pyathena
+boto
+mysql
