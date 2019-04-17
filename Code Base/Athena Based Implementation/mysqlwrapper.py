@@ -18,8 +18,8 @@ def get_connection():
         config = {
             'user': 'asad',
             'password': 'admin123',
-            'host': 'bigdata-assignment1.cmioopaskdwr.us-east-1.rds.amazonaws.com',
-            'database': 'asad'
+            'host': 'myawsbigdatainstance.cmioopaskdwr.us-east-1.rds.amazonaws.com',
+            'database': 'crimes_database'
         }
 
         cn = mysql.connector.connect(**config)
