@@ -22,9 +22,9 @@ To execute this scenario, scripting must be done using distributed programming p
 ```
 1 - Using S3, pyspark, RDS (Mysql)
 Reference Directory: Code Base/AWS-Spark-RDS Based Implementation 
-```
+
 ## Second approach is followed in industry
-```
+
 2 - Using S3, Athena , RDS (Mysql)
 Reference Directory: Code Base/Athena Based Implementation
 ```
